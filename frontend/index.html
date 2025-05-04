@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Counter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calorie Counter</h1>
+        <div class="input-section">
+            <div class="input-option">
+                <h3>Paste Food URL</h3>
+                <input type="url" id="foodUrl" placeholder="Paste Zomato/Swiggy URL here">
+            </div>
+            <div class="input-option">
+                <h3>Or Select Food Item</h3>
+                <select id="foodSelect">
+                    <option value="">Choose a food item</option>
+                    <option value="pizza">Pizza</option>
+                    <option value="burger">Burger</option>
+                    <option value="pasta">Pasta</option>
+                    <option value="sushi">Sushi</option>
+                    <option value="salad">Salad</option>
+                    <option value="friedChicken">Fried Chicken</option>
+                    <option value="iceCream">Ice Cream</option>
+                    <option value="chocolateCake">Chocolate Cake</option>
+                    <option value="frenchFries">French Fries</option>
+                    <option value="sandwich">Sandwich</option>
+                    <option value="tacos">Tacos</option>
+                    <option value="ramen">Ramen</option>
+                    <option value="steak">Steak</option>
+                    <option value="pancakes">Pancakes</option>
+                    <option value="donut">Donut</option>
+                    <option value="quinoaSalad">Quinoa Salad</option>
+                    <option value="falafel">Falafel</option>
+                    <option value="butterChicken">Butter Chicken</option>
+                    <option value="kimchi">Kimchi</option>
+                    <option value="lentilSoup">Lentil Soup</option>
+                    <option value="avocadoToast">Avocado Toast</option>
+                </select>
+            </div>
+            <button id="analyzeBtn">Analyze Calories</button>
+        </div>
+        
+        <div id="results" class="results-section">
+            <div id="foodInfo" class="food-info">
+                <h2>Food Details</h2>
+                <div id="foodImage" class="food-image"></div>
+                <div id="foodName" class="food-name"></div>
+            </div>
+            
+            <div id="nutritionInfo" class="nutrition-info">
+                <h2>Nutrition Information</h2>
+                <div id="calories" class="nutrition-item"></div>
+                <div id="protein" class="nutrition-item"></div>
+                <div id="carbs" class="nutrition-item"></div>
+                <div id="fats" class="nutrition-item"></div>
+                <div id="reasoning" class="reasoning"></div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "calorie-counter-frontend",
+  "version": "1.0.0",
+  "description": "Frontend for Calorie Counter application",
+  "main": "app.js",
+  "scripts": {
+    "start": "serve .",
+    "dev": "live-server"
+  },
+  "dependencies": {
+    "serve": "^14.2.0"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
